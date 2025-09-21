@@ -70,7 +70,7 @@ Ensure no two MySQL pods are on the same node (pod anti-affinity).
 Check ToDo app pods:
 
 ```sh
-kubectl get pods -n default -l app=todoapp -o wide
+kubectl get pods -n todoapp -l app=todoapp -o wide
 ```
 
 Verify pods are scheduled on nodes with the `app=todoapp` label (preferred node affinity).
